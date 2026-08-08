@@ -1,4 +1,4 @@
-# A2L / ASAP2 Parser Project — Project Context & Roadmap
+# A2L / ASAP2 Specifications Database — Project Context & Roadmap
 
 ## 1. Project Goal
 
