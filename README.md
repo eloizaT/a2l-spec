@@ -119,7 +119,7 @@ A consumer can query the database to determine, for example:
 
 ```text
 .
-├── db/             # Canonical generated SQLite database
+├── db/             # Canonical generated SQLite database and schema snapshot
 ├── migrations/     # Database schema evolution
 ├── seeds/          # Version-controlled grammar and metadata
 ├── validation/     # SQL integrity and coverage checks
@@ -128,19 +128,28 @@ A consumer can query the database to determine, for example:
 └── tests/          # Regression and expected-state checks
 ```
 
-The intended build flow is:
+## Canonical Database Workflow
+
+The authoritative build inputs are the SQL files under `migrations/` and `seeds/`.
+The repository also keeps a schema snapshot at `db/schema.sql` and the generated canonical database at `db/a2l_spec.db`.
 
 ```text
 migrations + seeds
         │
         ▼
-   build_db.py
+   scripts/build_db.py
         │
         ▼
  db/a2l_spec.db
 ```
 
-The generated database may be committed to the repository for direct consumption while remaining reproducible from its source-controlled schema and data.
+A contributor can rebuild the canonical database with:
+
+```bash
+python3 scripts/build_db.py
+```
+
+This produces the database at `db/a2l_spec.db` by default. The generated database may remain committed to the repository for direct consumption while remaining reproducible from source-controlled inputs.
 
 ## Development Status
 
