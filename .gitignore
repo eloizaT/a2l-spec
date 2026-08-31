@@ -1,0 +1,16 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+.vscode/
+
+# Python local env
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local runtime artifacts
+.env
+.env.*
