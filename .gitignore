@@ -1,6 +1,7 @@
 # OS/editor noise
 .DS_Store
 Thumbs.db
+*spec.db
 *.swp
 *.tmp
 .vscode/

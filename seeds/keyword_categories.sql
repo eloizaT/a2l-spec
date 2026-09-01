@@ -1,0 +1,21 @@
+-- Seed data for keyword_categories
+BEGIN;
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (0, 'Deprecated', 'Keywords retained for compatibility with older A2L versions');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (1, 'Project', 'Top-level project structure and metadata');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (2, 'Module', 'ECU module definitions and common properties');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (3, 'Memory', 'Memory layout, segments, addressing, and storage');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (4, 'Measurement', 'Measurement object definitions');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (5, 'Calibration', 'Calibration object definitions');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (6, 'Axis', 'Axis definitions and axis-related attributes');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (7, 'Conversion', 'Conversion methods, tables, units, and scaling');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (8, 'Record Layout', 'Record layout and storage definitions');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (9, 'Function', 'Functions, groups, frames, and organization');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (10, 'Type Definition', 'TYPEDEF_* reusable object definitions');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (11, 'Variant Coding', 'Variant coding and conditional configuration');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (12, 'Transformer', 'Data transformation definitions');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (13, 'Security', 'User rights and access control');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (14, 'IF_DATA', 'Interface-specific extension data');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (15, 'Metadata', 'Annotations, comments, and descriptive information');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (16, 'Utility', 'General-purpose helper keywords');
+INSERT INTO "keyword_categories" ("id", "name", "description") VALUES (17, 'A2ML', 'Embedded A2ML grammar definition language.');
+COMMIT;
